@@ -161,6 +161,12 @@
       outline: none;
       border-color: #D4AF37;
     }
+
+    /* Custom logo sizing */
+    #armglon-logo {
+      max-height: 50px; /* Adjust the height as needed */
+      width: auto;
+    }
   </style>
 </head>
 <body class="bg-charcoal text-white font-sans antialiased">
@@ -168,7 +174,12 @@
   <!-- ==================== NAVIGATION ==================== -->
   <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-500" id="navbar">
     <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-      <a href="#" class="font-serif text-2xl tracking-widest text-gold">ARMGLON</a>
+      
+      <!-- YOUR LOGO IS HERE -->
+      <a href="#" class="flex items-center">
+        <img src="logo.png" alt="Armglon Logo" id="armglon-logo" />
+      </a>
+
       <div class="hidden md:flex items-center gap-10 text-sm tracking-widest uppercase">
         <a href="#silence" class="hover:text-gold transition">Silence</a>
         <a href="#showroom" class="hover:text-gold transition">Showroom</a>
@@ -426,11 +437,11 @@
     </div>
   </section>
 
-  <!-- ==================== FOOTER (UPDATED WITH ADDRESS & PHONE) ==================== -->
+  <!-- ==================== FOOTER ==================== -->
   <footer class="py-16 border-t border-white/5">
     <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
       <div class="text-center md:text-left">
-        <p class="font-serif text-2xl text-gold tracking-widest mb-2">ARMGLON</p>
+        <img src="logo.png" alt="Armglon Logo" class="h-10 w-auto mx-auto md:mx-0 mb-2" />
         <p class="text-sm text-white/40 font-light">Acoustic & Stagecraft Solutions · Mumbai</p>
       </div>
 
@@ -448,7 +459,7 @@
     </div>
   </footer>
 
-  <!-- ==================== JAVA SCRIPT (Added to make it work) ==================== -->
+  <!-- ==================== JAVA SCRIPT ==================== -->
   <script>
     // 1. Navbar scroll effect
     window.addEventListener('scroll', () => {
