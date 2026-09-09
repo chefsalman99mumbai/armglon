@@ -161,31 +161,18 @@
       outline: none;
       border-color: #D4AF37;
     }
-
-    /* ====== LOGO SIZING (Increased for better visibility) ====== */
-    .logo-nav {
-      height: 100px;
-      width: auto;
-      max-width: 350px;
-      object-fit: contain;
-    }
-    .logo-footer {
-      height: 75px;
-      width: auto;
-      object-fit: contain;
-    }
   </style>
 </head>
 <body class="bg-charcoal text-white font-sans antialiased">
 
-  <!-- ==================== NAVIGATION ==================== -->
+  <!-- ==================== NAVIGATION (Text Logo) ==================== -->
   <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-500" id="navbar">
     <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
       
-      <!-- LOGO WITH FALLBACK IF NOT FOUND -->
-      <a href="#" class="flex items-center">
-        <img src="logo.png" alt="Armglon Logo" class="logo-nav" 
-             onerror="this.onerror=null; this.outerHTML='<span class=\'font-serif text-2xl tracking-widest text-gold\'>ARMGLON</span>';" />
+      <!-- PURE TEXT LOGO - NO IMAGE -->
+      <a href="#" class="flex flex-col items-center group">
+        <span class="font-serif text-2xl tracking-[0.5em] text-gold uppercase leading-none pl-2">Armglon</span>
+        <span class="text-[10px] tracking-[0.35em] text-white/50 font-sans italic mt-1">The Art of Silence</span>
       </a>
 
       <div class="hidden md:flex items-center gap-10 text-sm tracking-widest uppercase">
@@ -445,14 +432,14 @@
     </div>
   </section>
 
-  <!-- ==================== FOOTER ==================== -->
+  <!-- ==================== FOOTER (Text Logo) ==================== -->
   <footer class="py-16 border-t border-white/5">
     <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
       <div class="text-center md:text-left">
-        <!-- FOOTER LOGO WITH FALLBACK -->
-        <img src="logo.png" alt="Armglon Logo" class="logo-footer mx-auto md:mx-0 mb-2" 
-             onerror="this.onerror=null; this.outerHTML='<span class=\'font-serif text-2xl tracking-widest text-gold\'>ARMGLON</span>';" />
-        <p class="text-sm text-white/40 font-light">Acoustic & Stagecraft Solutions · Mumbai</p>
+        <!-- PURE TEXT LOGO - NO IMAGE -->
+        <span class="font-serif text-2xl tracking-[0.5em] text-gold uppercase leading-none block pl-2">Armglon</span>
+        <span class="text-[10px] tracking-[0.35em] text-white/50 font-sans italic mt-1 block">The Art of Silence</span>
+        <p class="text-sm text-white/40 font-light mt-4">Acoustic & Stagecraft Solutions · Mumbai</p>
       </div>
 
       <!-- New Contact Details Block -->
